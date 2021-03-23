@@ -2,17 +2,21 @@
     <img class="img" src="assets/img/logo.png">
 </div>
 
-<br><br>
-<div class="box">
-    <form action="">
-        <input type="search" [(value)]="value" (click)="value=''">
-        <i class="fa fa-search"></i>
-    </form>
+<div class="search-flex-center">
+    <div class="box">
+        <form action="">
+            <input type="search" [(value)]="value" (click)="buscar()">
+            <i class="fa fa-search"></i>
+        </form>
+    </div>
 </div>
 
-
-<br><br><br><br>
-
+<div class="resultado-flex-center">
+    <div class="row">
+        <h4>RESULTADO DA BUSCA!</h4>
+    </div>
+</div>
+<br>
 <div class="card-flex-center">
     <div class="card-padding">
         <div class="card-container">
@@ -80,26 +84,11 @@
     </div>
 </div>
 
-<br>
-<br><br><br>
-
-
-
-<BR>
-<div class="card">
-    <mat-card>Simple card</mat-card>
-</div>
-<br>
-<br>
-
 <footer>
     <p>
-        Projeto <i class="fa fa-heart"></i>
-        <a target="_blank" href="https://github.com/totvs-hospitality-challenges/desafio-frontend">desafio
+        TOTVS projeto desafio<i class="fa fa-heart"></i>
+        <a target="_blank" href="https://github.com/BeatrizGivisiez/desafio-frontend/blob/master/README.md">
             frontend</a>
-        - Leia meu
-        <a target="_blank"
-            href="https://github.com/BeatrizGivisiez/desafio-frontend/blob/master/README.md">README.md</a>
         - Desenvolvido por
         <a target="_blank" href="https://www.linkedin.com/in/beatriz-givisiez/">Beatriz Givisiez</a>
     </p>

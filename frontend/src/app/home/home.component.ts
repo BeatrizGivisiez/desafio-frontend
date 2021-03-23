@@ -9,8 +9,9 @@ import { MatDialog } from '@angular/material/dialog';
 export class HomeComponent implements OnInit {
   value = '';
 
-
-
+  buscar() {
+    console.log("test")
+  }
 
   constructor(public dialog: MatDialog) { }
 
