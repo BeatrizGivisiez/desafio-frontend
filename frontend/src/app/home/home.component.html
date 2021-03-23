@@ -2,25 +2,87 @@
     <img class="img" src="assets/img/logo.png">
 </div>
 
-<br>
-<br>
-
-<div class="box mt-32">
+<br><br>
+<div class="box">
     <form action="">
-        <input type="search">
+        <input type="search" [(value)]="value" (click)="value=''">
         <i class="fa fa-search"></i>
     </form>
 </div>
 
-<br>
 
-<mat-form-field class="example-form-field">
-    <mat-label>Buscar</mat-label>
-    <input matInput type="text" [(value)]="value">
-    <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-        <mat-icon>search</mat-icon>
-    </button>
-</mat-form-field>
+<br><br><br><br>
+
+<div class="card-flex-center">
+    <div class="card-padding">
+        <div class="card-container">
+            <span class="pro">ID</span>
+            <h3>FRONT END </h3>
+            <h6>Rio de Janeiro</h6>
+            <p>R$ 10.000,00</p>
+            <div class="buttons">
+                <button mat-button (click)="openDialog()">Candidatar</button>
+            </div>
+            <div class="skills">
+                <h6>Skills</h6>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Angular</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-padding">
+        <div class="card-container">
+            <span class="pro">ID</span>
+            <h3>BACK END</h3>
+            <h6>São Paulo</h6>
+            <p>R$ 8.000,00</p>
+            <div class="buttons">
+                <button class="primary ghost">
+                    Candidatar
+                </button>
+            </div>
+            <div class="skills">
+                <h6>Skills</h6>
+                <ul>
+                    <li>Java 8</li>
+                    <li>Jest</li>
+                    <li>Springboot</li>
+                    <li>IDE Eclipse</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-padding">
+        <div class="card-container">
+            <span class="pro">ID</span>
+            <h3>FULL STACK</h3>
+            <h6>Belo Horizonte</h6>
+            <p>R$ 9.000,00</p>
+            <div class="buttons">
+                <button class="primary ghost">
+                    Candidatar
+                </button>
+            </div>
+            <div class="skills">
+                <h6>Skills</h6>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>JavaScript</li>
+                    <li>API</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br><br><br>
+
 
 
 <BR>
@@ -29,58 +91,16 @@
 </div>
 <br>
 <br>
-<div class="cards">
-    <div class="card-container">
-        <span class="pro">ID</span>
-        <h3>FRONT END </h3>
-        <h6>Rio de Janeiro</h6>
-        <p>R$ 6.000,00</p>
-        <div class="buttons">
-            <button class="primary ghost">
-                Candidatar
-            </button>
-        </div>
-        <div class="skills">
-            <h6>Skills</h6>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Angular</li>
-            </ul>
-        </div>
-    </div>
-    <div class="card-container">
-        <span class="pro">ID</span>
-        <h3>BACK END</h3>
-        <h6>São Paulo</h6>
-        <p>R$ 10.000,00</p>
-        <div class="buttons">
-            <button class="primary ghost">
-                Candidatar
-            </button>
-        </div>
-        <div class="skills">
-            <h6>Skills</h6>
-            <ul>
-                <li>Java 8</li>
-                <li>Jest</li>
-                <li>Springboot</li>
-                <li>IDE Eclipse</li>
-            </ul>
-        </div>
-    </div>
-</div>
 
-<br>
-<br><br><br><br><br>
 <footer>
     <p>
-        Created with <i class="fa fa-heart"></i> by
-        <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-        - Read how I created this
-        <a target="_blank" href="https://florin-pop.com/blog/2019/04/profile-card-design">here</a>
-        - Design made by
-        <a target="_blank" href="https://dribbble.com/shots/6276930-Profile-Card-UI-Design">Ildiesign</a>
+        Projeto <i class="fa fa-heart"></i>
+        <a target="_blank" href="https://github.com/totvs-hospitality-challenges/desafio-frontend">desafio
+            frontend</a>
+        - Leia meu
+        <a target="_blank"
+            href="https://github.com/BeatrizGivisiez/desafio-frontend/blob/master/README.md">README.md</a>
+        - Desenvolvido por
+        <a target="_blank" href="https://www.linkedin.com/in/beatriz-givisiez/">Beatriz Givisiez</a>
     </p>
 </footer>

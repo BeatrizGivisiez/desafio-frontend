@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatAccordion } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +9,25 @@ import { MatAccordion } from '@angular/material';
 export class HomeComponent implements OnInit {
   value = '';
 
-  constructor() { }
+
+
+
+  constructor(public dialog: MatDialog) { }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   ngOnInit() {
   }
-
 }
+
+@Component({
+  selector: 'dialog-content-example-dialog',
+  templateUrl: './component/dialog-content-example-dialog.html',
+})
+export class DialogContentExampleDialog { }
