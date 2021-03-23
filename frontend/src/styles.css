@@ -1,4 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
- 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #F5F5F5;}
+/* GLOBAL STYLES FLEXBOX */ 
+* { box-sizing: border-box; }
+html { height: 100%; }
+
+body { 
+    height: 100%;
+    background-color: #2F3337;; 
+    margin: 0px 50px 50px; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+} 
+
+.item { 
+    padding: 2rem; 
+    border: 5px solid #87b5ff; 
+    border-radius: 3px; 
+    font-size: 2em; 
+    font-family: sans-serif; 
+    font-weight: bold; 
+    background-color: #1c57b5; 
+}
