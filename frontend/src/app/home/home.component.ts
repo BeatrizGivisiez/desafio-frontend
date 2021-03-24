@@ -1,3 +1,4 @@
+import { Vagas } from './component/vagas';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -9,11 +10,30 @@ import { MatDialog } from '@angular/material/dialog';
 export class HomeComponent implements OnInit {
   value = '';
 
+  vagas: Vagas = {
+    'id': 1,
+    'name': 'FRONTEND',
+    'city': 'Rio de Janeiro',
+    'salary': 'R$ 10.000,00',
+    'skills': ['JavaScript', 'HTML', 'CSS']
+  }
+
+  arrVagas = ["FRONTEND", "FULLSTACK", "BACKEND"];
+
+  skills: any;
+
   buscar() {
     console.log("test")
   }
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) {
+    this.skills = [{
+      "req1": "JavaScript",
+      "req2": "HTML5",
+      "req3": "CSS3",
+      "req4": "Angular"
+    }]
+  }
 
   openDialog() {
     const dialogRef = this.dialog.open(DialogContentExampleDialog);

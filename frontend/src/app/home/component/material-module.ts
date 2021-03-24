@@ -41,6 +41,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { MatFormFieldModule } from '@angular/material';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     exports: [
@@ -87,6 +89,10 @@ import { OverlayModule } from '@angular/cdk/overlay';
         OverlayModule,
         PortalModule,
         ScrollingModule,
+
+        MatFormFieldModule,
+        BrowserAnimationsModule,
+        NoopAnimationsModule,
     ]
 })
 export class DemoMaterialModule { }
