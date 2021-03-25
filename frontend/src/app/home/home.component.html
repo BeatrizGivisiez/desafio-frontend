@@ -10,36 +10,28 @@
         </form>
     </div>
 </div>
-
-<div *ngFor="let n of arrVagas">
-    <h1 *ngIf="n === 'BFF'">{{n}}</h1>
-</div>
-
-
 <div class="resultado-flex-center">
     <div class="row">
         <h4>RESULTADO DA BUSCA!</h4>
     </div>
 </div>
-<br>
-<div class="card-flex-center">
-    <div class="card-padding">
-        <div class="card-container">
-            <span class="pro">{{vagas.id}}</span>
-            <h3>{{vagas.name}}</h3>
-            <h6>{{vagas.city}}</h6>
-            <p>{{vagas.salary}}</p>
-            <div class="buttons">
-                <button (click)="openDialog()" class="primary ghost">Candidatar</button>
-            </div>
-            <div class="skills">
-                <h6>Skills</h6>
-                <ul>
-                    <li>{{vagas.skills[1]}}</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Angular</li>
-                </ul>
+<div class="row">
+    <div class="card-flex" *ngFor="let vaga of vagas">
+        <div class="card-padding">
+            <div class="card-container">
+                <span class="pro">{{vaga.id}}</span>
+                <h3>{{vaga.name}}</h3>
+                <h6>{{vaga.city}}</h6>
+                <p>{{vaga.salary}}</p>
+                <div class="buttons">
+                    <button (click)="openDialog()" class="primary ghost">Candidatar</button>
+                </div>
+                <div class="skills">
+                    <h6>Skills</h6>
+                    <ul>
+                        <li *ngFor="let skill of vaga.skills">{{skill.name}}</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

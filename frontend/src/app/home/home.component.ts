@@ -1,4 +1,4 @@
-import { Vagas } from './component/vagas';
+import { Vagas } from './component/vagas.model';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -10,29 +10,38 @@ import { MatDialog } from '@angular/material/dialog';
 export class HomeComponent implements OnInit {
   value = '';
 
-  vagas: Vagas = {
-    'id': 1,
-    'name': 'FRONTEND',
-    'city': 'Rio de Janeiro',
-    'salary': 'R$ 10.000,00',
-    'skills': ['JavaScript', 'HTML', 'CSS']
-  }
-
-  arrVagas = ["FRONTEND", "FULLSTACK", "BACKEND"];
-
-  skills: any;
+  vagas: Array<Vagas>;
 
   buscar() {
-    console.log("test")
+    console.log(this.value)
   }
+  // let search = this.vagas.filter(function (value) {
+  //   return value.vagas.name == value;
+  // },
 
   constructor(public dialog: MatDialog) {
-    this.skills = [{
-      "req1": "JavaScript",
-      "req2": "HTML5",
-      "req3": "CSS3",
-      "req4": "Angular"
-    }]
+    this.vagas = [{
+      id: 1,
+      name: 'FRONTEND',
+      city: 'Rio de Janeiro',
+      salary: 'R$ 10.000,00',
+      skills: [{ name: 'JavaScript' }, { name: 'HTML' }, { name: 'CSS' }]
+    },
+    {
+      id: 2,
+      name: 'BACKEND',
+      city: 'São Paulo',
+      salary: 'R$ 8.000,00',
+      skills: [{ name: 'Java' }, { name: 'Oracle' }, { name: 'Eclipse' }]
+    },
+    {
+      id: 3,
+      name: 'FULLSTACK',
+      city: 'Belo Horizonte',
+      salary: 'R$ 13.000,00',
+      skills: [{ name: 'JavaScript' }, { name: 'Java' }, { name: 'Oracle' }]
+    },
+    ]
   }
 
   openDialog() {
