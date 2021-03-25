@@ -1,12 +1,8 @@
-# Desafio Frontend
+# Desafio Frontend Totvs 2021
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+**Desenvolvido por Beatriz Givisiez**
 
-## Instalar dependências 
-Para instalar e salvar em suas dependências do package.json, execute o comando dentro da cd frontend: `npm install @material-ui/core`
-
-## Criando modulos e componentes
-`ng generate module home --routing`
-`ng generate component home`  
-
-## Inicar Projeto
-Execute `ng serve --open` para abrir o projeto no navegador. `http://localhost:4200/`.
+### Imagens
+![Imagem 1](.assets/img/1.jpg "Imagem 1")
+![Imagem 2](.assets/img/2.jpg "Imagem 2")
+![Imagem 3](assets/img/3.jpg "Imagem 3")
