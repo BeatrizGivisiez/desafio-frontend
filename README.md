@@ -1,6 +1,6 @@
 # Desafio Frontend Totvs 2021
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0. <br>
-(Utilizei o notebook da empresa o qual estava instalado o Angular em sua 8.2 de forma -g). <br> 
+(Utilizei o notebook da empresa o qual a intalação do Angular de forma -g "global"). <br> 
 **Desenvolvido por Beatriz Givisiez**
 
 ### Projeto
