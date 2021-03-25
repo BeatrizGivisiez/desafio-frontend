@@ -4,7 +4,7 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 **Desenvolvido por Beatriz Givisiez**
 
 ### Projeto
-Desenvolvi um projeto de sistema de busca vagas, contendo alguns cards contendo campos (id, nome, cidade, salario e requerimento). Um campo input search para pesquisar por **nome**. Fiz um layout moderno e abusei das cores. Também utilizei logo e favicon da empresa! \õ
+Desenvolvi um projeto de sistema de busca vagas, contendo alguns cards contendo campos (id, nome, cidade, salario e requerimento). Um campo input search para pesquisar por **nome**. Fiz um layout moderno e abusei das cores, flexbox e material. Também utilizei logo e favicon da empresa! \õ
 
 ### Imagens
 ![Imagem 1](./1.png "Imagem 1")
