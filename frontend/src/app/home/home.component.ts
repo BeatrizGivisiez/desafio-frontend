@@ -8,16 +8,18 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  value = '';
-
   vagas: Array<Vagas>;
+  value: '';
 
-  buscar() {
-    console.log(this.value)
+  onKey(event) {
+    const inputValue = event.target.value;
+    console.log(inputValue)
+    for (const vaga of this.vagas) {
+      if (vaga.name == inputValue) {
+        this.vagas = [vaga]
+      }
+    }
   }
-  // let search = this.vagas.filter(function (value) {
-  //   return value.vagas.name == value;
-  // },
 
   constructor(public dialog: MatDialog) {
     this.vagas = [{

@@ -5,7 +5,7 @@
 <div class="search-flex-center">
     <div class="box">
         <form action="">
-            <input type="search" [(value)]="value" (click)="buscar()">
+            <input (keyup)="onKey($event)" type="search" (value)="value">
             <i class="fa fa-search"></i>
         </form>
     </div>
